@@ -47,7 +47,3 @@ For any inquiries or issues related to the code, feel free to contact the author
 
 - **Author:** Zhan Zhang
 - **Email:** zz221636@stanford.edu
-
-## License
-
-This code is provided under the [LICENSE](./LICENSE) file. Please review the license before using or modifying the code.
