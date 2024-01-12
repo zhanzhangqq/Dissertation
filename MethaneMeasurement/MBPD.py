@@ -176,7 +176,7 @@ def MBPDRetrieval(ind, n_cds, maxthd, q, totallist):
 def EmissionRate(ind, n_cds, maxthd, q, totallist, windlist):
     # Target Date
     d2 = totallist[ind]
-    retrievalmass_td = gridretrieval_MBSP(reflectance_b11_td, reflectance_b12_td)
+    retrievalmass_td = gridretrieval_MBSP(d2)
   
     # Comparison date
     [nrow, ncol] = retrievalmass_td.shape
@@ -184,7 +184,7 @@ def EmissionRate(ind, n_cds, maxthd, q, totallist, windlist):
     comlist = totallist[ind-n_cds:ind]
     for j in range(n_cds):
         d1 = comlist[j]
-        retrievalmass_cd = gridretrieval_MBSP(reflectance_b11_cd, reflectance_b12_cd)
+        retrievalmass_cd = gridretrieval_MBSP(d1)
         former += retrievalmass_cd
     former = former/n_cds
     
@@ -212,22 +212,19 @@ def EmissionRate(ind, n_cds, maxthd, q, totallist, windlist):
         rate = 0
     else:
         rate = totalmass*wind*400/length   # unit: kg/s
-
     return rate
 
 def main():
-    # Example usage of the functions
+    
     totallist = ["date1", "date2", "date3"]  # Replace with actual date list
     windlist = [10, 15, 20]  # Replace with actual wind speed list
-
     n_cds = 3
     maxthd = 0.01
     q = 0.9
 
-    for ind in range(n_cds, len(totallist)):
-        retrievalmask = MBPDRetrieval(ind, n_cds, maxthd, q, totallist)
-        rate = EmissionRate(ind, n_cds, maxthd, q, totallist, windlist)
-        print(f"Emission rate for {totallist[ind]}: {rate} kg/s")
+    retrievalmask = MBPDRetrieval(ind, n_cds, maxthd, q, totallist)
+    rate = EmissionRate(ind, n_cds, maxthd, q, totallist, windlist)
+    print(f"Emission rate for {totallist[ind]}: {rate} kg/s")
 
 if __name__ == "__main__":
     main()
