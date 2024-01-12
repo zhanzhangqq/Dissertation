@@ -15,14 +15,14 @@ This repository contains the code and scripts associated with the research proje
 ## Contents
 
 1. **Gas Flaring Study**
-    - Code related to the gas flaring project introduced in the oral qualifying exam.
+    - Code for the research project focusing on field-level gas flaring estimation using a oil & gas field geo-database.
     - [Detailed documentation for the gas flaring study](./GasFlaring/README.md).
 
-2. **Methane Measurement Project**
+2. **Methane Measurement Study**
     - Code for the research project focusing on methane measurement using remote sensing imaging spectroscopy.
     - [Detailed documentation for the methane project](./MethaneMeasurement/README.md).
 
-3. **Carbon Dioxide Measurement Project**
+3. **Carbon Dioxide Measurement Study**
     - Code for the research project focusing on carbon dioxide measurement using remote sensing imaging spectroscopy.
     - [Detailed documentation for the carbon dioxide project](./CarbonDioxideMeasurement/README.md).
 
@@ -34,11 +34,11 @@ Please refer to the individual project directories for specific instructions on 
 
 If you find this code useful for your research, please consider citing the corresponding dissertation:
 
-@phdthesis{YourLastNameYear,
+@phdthesis{Zhang2024,
 title = {Greenhouse Gas Detection in the Energy System: An Integration of Remote Sensing and GIS Database},
-author = {Your Last Name, Your First Name},
-school = {Your University},
-year = {Year of Completion}
+author = {Zhang, Zhan},
+school = {Stanford University},
+year = {2024}
 }
 
 ## Contact
