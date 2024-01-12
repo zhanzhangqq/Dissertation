@@ -26,7 +26,7 @@ The `Well2Field.py` script focuses on the spatial conversion from wells to field
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Dissertation/GasFlaring/well-to-field.git
+git clone https://github.com/zhanzhangqq/Dissertation.git
 cd GasFlaring
 ```
 
@@ -63,8 +63,8 @@ The `FlareMatch.py` script focuses on matching flares to specific geographic fie
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your_username/flare-match.git
-cd FlareMatch
+git clone https://github.com/zhanzhangqq/Dissertation.git
+cd GasFlaring
 ```
 
 2. Modify the script as needed, adjusting file paths and parameters.
