@@ -1,6 +1,6 @@
 # Methane Measurement Study
 
-This repository contains the code and scripts for the methane measurement study: S2Download.java and MBPD.py. The former Java script is for dowloading Sentinel-2 satellite imagery from Google Earth Engine. The latter Python script is for methane retrieval from Sentinel-2 satellite data and subsequent calculation of emission rates based on the retrieved concentration enhancements. The retrieval process involves multi-band-single-pass (MBSP) and multi-band-multi-pass-multi-comparison-date (MBPD) methods. The MBSP method is under license of GHGSAT Inc.
+This repository contains the code and scripts for the methane measurement study: S2Download.java and MBPD.py. The former Java script is for dowloading Sentinel-2 satellite imagery from Google Earth Engine. The latter Python script is for methane retrieval from Sentinel-2 satellite data and subsequent calculation of emission rates based on the retrieved concentration enhancements. The retrieval process involves multi-band-single-pass (MBSP) and multi-band-multi-pass-multi-comparison-date (MBPD) methods. The MBSP method is under license of GHGSAT Inc. More information of this study can be found in the following publication: https://doi.org/10.5194/amt-15-7155-2022.
 
 ## S2Download.java
 
@@ -75,3 +75,22 @@ The `MBPDRetrieval` function implements multi-band-multi-pass-multi-comparison-d
 #### Emission Rate Calculation
 
 The `EmissionRate` function calculates the emission source rate (kg/s) based on retrieved concentration enhancements, wind speed, and plume characteristics.
+
+## Citation
+Please cite the following reference if you find this project useful for your research or work:
+
+Zhang, Z., Sherwin, E. D., Varon, D. J., & Brandt, A. R. (2022). Detecting and quantifying methane emissions from oil and gas production: algorithm development with ground-truth calibration based on Sentinel-2 satellite imagery. Atmospheric Measurement Techniques, 15(23): 7155-7169.
+
+```bibtex
+@article{Zhang2022Detecting,
+author = {Zhang, Z. and Sherwin, E. D. and Varon, D. J. and Brandt, A. R.},
+title = {Detecting and quantifying methane emissions from oil and gas production: algorithm development with ground-truth calibration based on {Sentinel-2} satellite imagery},
+journal = {Atmospheric Measurement Techniques},
+volume = {15},
+number = {23},
+pages = {7155--7169},
+year = {2022},
+doi = {10.5194/amt-15-7155-2022},
+url = {https://amt.copernicus.org/articles/15/7155/2022/}
+}
+```
