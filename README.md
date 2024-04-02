@@ -34,12 +34,14 @@ Please refer to the individual project directories for specific instructions on 
 
 If you find this code useful for your research, please consider citing the corresponding dissertation:
 
+```bibtex
 @phdthesis{Zhang2024,
 title = {Greenhouse Gas Detection in the Energy System: An Integration of Remote Sensing and GIS Database},
 author = {Zhang, Zhan},
 school = {Stanford University},
 year = {2024}
 }
+```
 
 ## Contact
 
